@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sortby" >
+        <item name="">Rent</item>
+        <item >Sell</item>
+        <item>Owner</item>
+        <item>Agent</item>
+    </array>
+
+</resources>

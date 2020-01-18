@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RentActivity">
+
+    <ScrollView
+        android:layout_width="700dp"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/avail"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="Available" />
+
+                <RadioButton
+                    android:id="@+id/navail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Not Available" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/raaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mb"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="MagicBricks" />
+
+                <RadioButton
+                    android:id="@+id/acres"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="99Acres" />
+
+                <RadioButton
+                    android:id="@+id/direct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Direct" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/raaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/furn"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Furnished" />
+
+                <RadioButton
+                    android:id="@+id/nfurn"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:text="Semi-furnished" />
+
+                <RadioButton
+                    android:id="@+id/empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Empty" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/raa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/owner"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text="Owner" />
+
+                <RadioButton
+                    android:id="@+id/agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Agent" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/raaaaa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/bachelors"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Bachelors" />
+
+                <RadioButton
+                    android:id="@+id/family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Family" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Rent:" />
+
+
+                <EditText
+                    android:id="@+id/rentamount"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Deposit:" />
+
+
+                <EditText
+                    android:id="@+id/depositAmount"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:autofillHints="deposit"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Carpet Area:" />
+
+
+                <EditText
+                    android:id="@+id/CarpetArea"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ownerNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="Enter Owner/Agent Name:" />
+
+                <EditText
+                    android:id="@+id/owneragentName"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Owner/Agent Name" />
+
+            </LinearLayout>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="20dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="30dp"
+                      android:layout_marginLeft="130dp"
+                      android:text="Mobile No:" />
+
+
+                  <EditText
+                      android:id="@+id/mobileNo"
+                      android:layout_width="90dp"
+                      android:layout_height="wrap_content"
+                      android:ems="10"
+                      android:inputType="number" />
+              </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="BHKS:" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="54dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Floor:" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="130dp"
+                    android:text="Parking:" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="48dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="Address:" />
+
+                <EditText
+                    android:id="@+id/propertyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:hint="Enter Address" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>

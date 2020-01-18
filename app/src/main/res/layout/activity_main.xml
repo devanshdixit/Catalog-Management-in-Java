@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+
+
+        <HorizontalScrollView
+
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hori"
+            android:visibility="invisible"
+            android:elevation="20dp"
+            >
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true"
+                app:chipSpacing="5dp"
+                android:layout_marginLeft="10dp"
+                app:chipSpacingHorizontal="3dp"
+
+                >
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/allchip"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    />
+
+               <com.google.android.material.chip.Chip
+                   android:id="@+id/ownerchip"
+                   style="@style/Widget.MaterialComponents.Chip.Entry"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="owner"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                   />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/agentchip"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="agent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/rentchip"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/sellchip"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sell"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    />
+
+
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/layout_fab_submenu" />
+
+
+</RelativeLayout>
